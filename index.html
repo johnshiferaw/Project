@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PROJECT IS LIVE</title>
+    <meta charset="utf-8">
+    <style>
+        body { font-family: Arial; text-align: center; padding: 50px; }
+        a { 
+            display: inline-block; 
+            padding: 15px 30px; 
+            background: #2ea44f; 
+            color: white; 
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎉 SUCCESS! Your GitHub Pages is Working</h1>
+    <p>This minimal page confirms your site is live.</p>
+    
+    <a href="https://github.com/johnshiferaw/Project/raw/master/youtube_analysis.py" 
+       download="youtube_analysis.py">
+       DOWNLOAD PYTHON FILE
+    </a>
+    
+    <script>
+    // Instant fallback if download fails
+    document.querySelector('a').addEventListener('click', function(e) {
+        setTimeout(() => {
+            if(confirm("Download didn't start. Open on GitHub?")) {
+                window.open("https://github.com/johnshiferaw/Project/blob/master/youtube_analysis.py", "_blank");
+            }
+        }, 2000);
+    });
+    </script>
+</body>
+</html>
